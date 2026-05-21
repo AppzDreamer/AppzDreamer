@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Privacy Policy | Appz Dreamer</title>
+    <!-- Google Fonts & Simple Reset for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f6f9fc 0%, #eef2f7 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1a2c3e;
+            line-height: 1.5;
+            padding: 2rem 1.5rem;
+        }
+
+        /* main card container */
+        .privacy-container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* header section with subtle brand accent */
+        .policy-header {
+            background: #0b2b3b;
+            background-image: radial-gradient(circle at 10% 20%, rgba(46, 125, 150, 0.2) 0%, rgba(11, 43, 59, 0.9) 90%);
+            padding: 2.2rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .policy-header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: white;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .policy-header h1 span {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(2px);
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            letter-spacing: normal;
+        }
+
+        .app-badge {
+            color: #cbdbe6;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+        }
+
+        .last-updated {
+            color: #bdd4e2;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            border-left: 3px solid #5bc0de;
+            padding-left: 0.85rem;
+        }
+
+        /* main content area */
+        .policy-content {
+            padding: 2.5rem 2rem;
+        }
+
+        /* classic privacy policy sections */
+        .policy-section {
+            margin-bottom: 2.25rem;
+            scroll-margin-top: 1.5rem;
+        }
+
+        .policy-section h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #0f3b4c;
+            margin-bottom: 1rem;
+            border-left: 5px solid #2c9ab3;
+            padding-left: 1rem;
+        }
+
+        .policy-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e5a6e;
+            margin: 1.25rem 0 0.75rem 0;
+        }
+
+        .policy-section p, .policy-section li {
+            color: #2c3f4f;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .policy-section ul, .policy-section ol {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #eef6fa;
+            border-left: 4px solid #2c9ab3;
+            padding: 1.2rem 1.5rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        hr {
+            margin: 1.8rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #dce5ec, transparent);
+        }
+
+        .footer-note {
+            background: #f9fbfd;
+            border-radius: 1.2rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #4c6a7c;
+            border: 1px solid #e2edf2;
+        }
+
+        .footer-note a {
+            color: #1f7f8c;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #9ac2ce;
+        }
+
+        .footer-note a:hover {
+            color: #0e4b5c;
+            border-bottom: 1px solid #0e4b5c;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+            .policy-header {
+                padding: 1.5rem;
+            }
+            .policy-header h1 {
+                font-size: 1.7rem;
+            }
+            .policy-content {
+                padding: 1.5rem;
+            }
+            .policy-section h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* subtle animation for entrance */
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .privacy-container {
+            animation: fadeSlideUp 0.4s ease-out;
+        }
+    </style>
+</head>
+<body>
+<div class="privacy-container">
+    <div class="policy-header">
+        <button style="font-size:16px;cursor:pointer;color:#0b2b3b; margin-top:20px;" onclick="history.back()"> < Go Back  </button><br><br><h1>
+		
+            Privacy Policy 
+            <span>Appz Dreamer</span>
+        </h1>
+        <div class="app-badge">📱 Mobile applications & classic tools</div>
+        <div class="last-updated">📅 Effective date: February 2017 · Last revised: May 2026</div>
+    </div>
+    <div class="policy-content">
+        
+        
+        <div class="policy-section">
+            <h2>1. Introduction</h2>
+            <p>Appz Dreamer ("we", "us", or "our") respects your privacy and is committed to protecting any personal information that you may share while using our mobile applications, websites, and related services (collectively, the "Services"). This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you use any Appz Dreamer application or visit our blog/platform.</p>
+            <p>By using the Services, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined, terms used in this Privacy Policy have the same meanings as in our Terms of Use.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. Information We Collect</h2>
+            <p>We may collect information about you in a variety of ways. The information we may collect via the Appz Dreamer apps and website includes:</p>
+            <ul>
+                <li><strong>Personal Data:</strong> While using our apps, we may ask you to provide certain personally identifiable information such as your email address when contacting support, subscribing to newsletters, or registering for specific features. You are not required to provide this data, but some functionalities may be limited.</li>
+                <li><strong>Derivative Data:</strong> Information our servers automatically collect when you access our Services, such as your IP address, device type, operating system, app version, usage statistics, crash reports, and interaction with features inside the app.</li>
+                <li><strong>Mobile Device Access:</strong> Some of our apps may request access to certain features on your device (e.g., storage, camera, or photos) only when necessary for specific functionality (e.g., saving wallpapers or customizing content). You can control these permissions via your device settings.</li>
+                <li><strong>Third-Party Analytics & Advertising:</strong> We may use third-party services (Google Analytics, AdMob, etc.) that collect anonymous data to help us analyze app usage and serve contextual advertisements. Those services have their own privacy policies.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>3. How We Use Your Information</h2>
+            <p>Having accurate information about you permits us to provide a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Services to:</p>
+            <ul>
+                <li>Operate, maintain, and improve our mobile applications and website.</li>
+                <li>Respond to customer service requests and support needs efficiently.</li>
+                <li>Monitor and analyze usage trends to enhance user experience.</li>
+                <li>Deliver personalized content, app updates, and promotional offers (only if you have opted in).</li>
+                <li>Prevent fraudulent activity and ensure security of our services.</li>
+                <li>Generate anonymous aggregate statistics about our user base.</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            📌 <strong>Children’s Privacy:</strong> Our Services are not directed to individuals under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately.
+        </div>
+
+        <div class="policy-section">
+            <h2>4. Sharing & Disclosure of Information</h2>
+            <p>We value your trust and do not sell, trade, or rent your personal identification information to third parties. However, we may share information in the following limited situations:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> We may share data with vendors, consultants, and other third-party service providers who need access to such information to carry out work on our behalf (e.g., analytics, hosting, crash reporting). These parties are bound by confidentiality obligations.</li>
+                <li><strong>Legal Compliance:</strong> If required by law or in response to valid requests by public authorities (e.g., a court or government agency).</li>
+                <li><strong>Business Transfers:</strong> In connection with any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+                <li><strong>With Your Consent:</strong> We may disclose your personal information for any other purpose with your explicit consent.</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>5. Third-Party Services & Links</h2>
+            <p>Our apps and blog may contain links to third-party websites, advertisements, or services (e.g., AdMob, Facebook, or other advertisers). We are not responsible for the privacy practices or the content of these external sites. We encourage you to review the privacy policies of any third-party sites or services you interact with.</p>
+            <p><strong>Advertising networks</strong> may use cookies or similar technologies to deliver interest-based advertisements based on your prior visits to apps or websites. You can opt out of personalized advertising via your device settings (e.g., "Limit Ad Tracking" on iOS or "Opt out of Ads Personalization" on Android).</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>6. Data Security & Retention</h2>
+            <p>We implement reasonable administrative, technical, and physical safeguards to help protect your personal information. However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee its absolute security.</p>
+            <p>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>7. Your Choices & Rights</h2>
+            <p>Depending on your location, you may have certain data protection rights (including access, correction, deletion, or restriction of processing). You can manage your preferences or request changes by contacting us directly. If you wish to opt out of analytics or targeted advertising, you can adjust your device settings or use the relevant opt-out tools provided by third-party networks.</p>
+            <p>You may also disable certain permissions (e.g., storage, notifications) through your device’s settings, which may affect the functionality of Appz Dreamer apps.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>8. Updates to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make changes, we will revise the "effective date" at the top of this policy and notify you via the app or website where appropriate. We encourage you to review this page periodically for any updates. Your continued use of the Services after any modification constitutes your acceptance of the revised policy.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please reach out to us:</p>
+            <ul>
+                <li>📧 Email: <strong>appzdreamer@gmail.com</strong></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdVOAjfn4FA87NLrCrVyp_Z5FiHvbcyjT8musZYbUF5A_BSyw/viewform?usp=header" target="_blank" 
+   onclick="window.open(this.href, 'popup', 'width=800,height=600,scrollbars=yes,resizable=yes'); return false;">
+   🌐 Contact us 
+<!-- </a></li> -->
+                <!-- <li>📍 Postal address (for correspondence): Appz Dreamer, Privacy Office — provided upon request</li> -->
+            <!-- </ul> -->
+            <!-- <p>We will make every effort to respond promptly and resolve any privacy-related issues in a transparent manner.</p> -->
+        <!-- </div> -->
+
+        <!-- <hr> -->
+
+        <!-- <div class="footer-note"> -->
+            <!-- <strong>Appz Dreamer Classic · Flipcard · Magazine · Mosaic · Sidebar · Snapshot · Timeslide</strong><br> -->
+            <!-- This privacy policy applies to all Appz Dreamer legacy and current applications distributed via Google Play, Amazon Appstore, and other platforms. <br><br> -->
+            <!-- <span style="opacity: 0.7;">© 2017 – 2026 Appz Dreamer. All rights reserved.</span> · <a href="#" aria-label="Back to top">↑ Back to top</a> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </div> -->
+
+<!-- small script for optional top link scrolling -->
+
+        <br><br><button style="font-size:16px;cursor:pointer;color:#0b2b3b; margin-top:20px;" onclick="history.back()"> < Go Back  </button><br><br><h1>
+
+<script>
+    document.querySelectorAll('a[href="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+    // also ensure any dynamic external link behavior is neutral but no external links are forced
+</script>
+
+
+</body>
+</html>
